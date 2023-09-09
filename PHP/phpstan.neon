@@ -1,0 +1,8 @@
+parameters:
+    paths:
+        - "src"
+    level: 8
+
+    # Doesn't work too well with IDE code completion
+    checkGenericClassInNonGenericObjectType: false
+    checkMissingIterableValueType: false

@@ -1,0 +1,150 @@
+:root {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+pre {
+  font-size: 80%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.tree-node {
+  list-style: none;
+  padding: 0.25rem 0 0.25rem 1rem;
+  margin: 0;
+  border-left: 1px solid #36c;
+  position: relative;
+}
+
+.tree-node::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  background: #36c;
+  height: 1px;
+  width: 0.5rem;
+}
+
+.tree-node-current {
+  display: flex;
+}
+
+.open-close-button {
+  border: none;
+  background: #fff;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.5rem;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.open-close-button:hover {
+  background: #eee;
+}
+
+.no-open-close-button {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.5rem;
+}
+
+.folder-icon {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.delete-button {
+  border: 1px solid #ccc;
+  background: #fff;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  margin-left: 0.5rem;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-button:hover {
+  background: #eee;
+}
+
+.delete-button-icon {
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+}
+
+.add-button {
+  border: 1px solid #ccc;
+  background: #fff;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  margin-left: 0.5rem;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-button:hover {
+  background: #eee;
+}
+
+.add-button-icon {
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+}
